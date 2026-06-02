@@ -118,6 +118,31 @@
       font-weight: 600;
     }
 
+    .extra-video-box {
+      margin: 16px 0 12px;
+      padding: 16px 14px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, #fff7f7 0%, #ffffff 100%);
+      border: 1px solid rgba(255, 0, 0, 0.14);
+      box-shadow: 0 10px 24px rgba(255, 0, 0, 0.08);
+    }
+
+    .extra-video-title {
+      margin: 0 0 4px;
+      font-size: 19px;
+      line-height: 1.3;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .extra-video-subtitle {
+      margin: 0 0 12px;
+      font-size: 13px;
+      line-height: 1.4;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
     .button {
       display: flex;
       align-items: center;
@@ -133,6 +158,10 @@
       font-weight: 700;
       line-height: 1.2;
       transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    }
+
+    .extra-video-box .button {
+      margin: 10px 0 0;
     }
 
     .button:active {
@@ -220,6 +249,10 @@
         font-size: 18px;
       }
 
+      .extra-video-title {
+        font-size: 17px;
+      }
+
       .button {
         font-size: 16px;
         min-height: 58px;
@@ -253,14 +286,28 @@
       <span>Δες τη συνέντευξη τάξης</span>
     </a>
 
-    <a
-      class="button button-youtube"
-      href="https://youtube.com/shorts/1QBFrDY6AzI"
-      aria-label="Έξτρα χαρούμενες στιγμές από το σχολείο μας"
-    >
-      <span class="icon">▶️</span>
-      <span>Έξτρα χαρούμενες στιγμές από το σχολείο μας</span>
-    </a>
+    <div class="extra-video-box">
+      <p class="extra-video-title">Extra χαρούμενες στιγμές</p>
+      <p class="extra-video-subtitle">Δείτε περισσότερα βίντεο από το σχολείο μας</p>
+
+      <a
+        class="button button-youtube"
+        href="https://youtube.com/shorts/1QBFrDY6AzI"
+        aria-label="Extra χαρούμενες στιγμές - Βίντεο 1"
+      >
+        <span class="icon">▶️</span>
+        <span>Βίντεο 1</span>
+      </a>
+
+      <a
+        class="button button-youtube"
+        href="https://youtu.be/--RFB1QdnDg"
+        aria-label="Extra χαρούμενες στιγμές - Βίντεο 2"
+      >
+        <span class="icon">▶️</span>
+        <span>Βίντεο 2</span>
+      </a>
+    </div>
 
     <a
       class="button button-primary"
